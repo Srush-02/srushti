@@ -11,6 +11,32 @@
                         alert("Your baggage is within the allowed limit");
                 }
              }
+
+            let doIt=()=>{
+                        let sum =0;
+                for(let i=0 ; i<1000; i++){
+                    if(i%3 === 0 || i%5 === 0){
+                        sum += i; 
+                    }
+                }
+                alert(sum of all the multiples of 3 or 5 : +sum );
+            }
+
+            let calculateSum=()=>{
+               let a = document.getElementById('num1').value
+                   let b = document.getElementById('num2').value
+                   let n = document.getElementById('numN').value
+
+                let sum = 0;
+                if(let i =1; i<n; i++){
+                    if(i%a ===0 || i%b == 0){
+                            sum += i;
+
+                    }
+                } 
+                            alert("The sum of multiples of " + a + " or " + b + " below " + n + " is: " + sum);
+            }
+            
         </script>
     </head>
     <body>
@@ -20,5 +46,27 @@
          <p>Exercise 1:</p>
         <p>Create a function and button which allows a user to enter baggage weight and alerts them if 
         the baggage exceeds the allowance of 15kg</p>
+        
+        <h1>Find sum of all the multiples of 3 or 5 below 1000 </h1>
+          <p>Exercise 2:</p>
+        <input type="number" id="num">
+        <button onclick="doIt()">Press me!</button>
+        <p>sum of all the multiples of 3 or 5 below 1000 and alert the user to the correct answer</p>
+
+         <p>Exercise 3, Functions:</p>
+    <p>Create a page with a button and three input boxes, labelled a, b and n</p>
+    <p>
+        <p>Create a function to return the sum of all the multiples of a or b below n</p>
+        <p>Call the function and alert the user to the correct answer when they press the button.</p>
+</p>
+         <label for="num1">a: </label>
+        <input type = "number" id= "num1"><br><br>
+        
+        <label for="num2">b: </label>
+        <input type = "number" id= "num2"><br><br>
+
+        <label for="num3">n: </label>
+        <input type = "number" id= "numN"><br><br>
+        <button onclick="calculateSum()">Find Sum</button>
     </body>
 </html>
