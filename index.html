@@ -4,18 +4,21 @@
         <script src="index.js"></script>
         <script>
              let c=()=>{
-                    let i=document.getElementById('in').value
-                    if(i === 15){
-                        alert("baggage weight exceeded");
-
-                    }
+                    let weight =document.getElementById('in').value
+                    if(weight > 15){
+                        alert("Your baggage weight exceedes the allowance of 15 kg");
+                    }else {
+                        alert("Your baggage is within the allowed limit");
                 }
-
+             }
         </script>
     </head>
     <body>
         <h1>Enter baggage weight</h1>
         <input type="text" id="in">
         <button onclick='c()'>Press Me</button>
+         <p>Exercise 1:</p>
+        <p>Create a function and button which allows a user to enter baggage weight and alerts them if 
+        the baggage exceeds the allowance of 15kg</p>
     </body>
 </html>
