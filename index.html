@@ -3,7 +3,7 @@
         <title>Test Page</title>
         <script src="index.js"></script>
         <script>
-             let c=()=>{
+             let checkBaggageWeight = () => {
                     let weight =document.getElementById('in').value
                     if(weight > 15){
                         alert("Your baggage weight exceedes the allowance of 15 kg");
@@ -19,15 +19,15 @@
                         sum += i; 
                     }
                 }
-                alert(sum of all the multiples of 3 or 5 : +sum );
+                alert("sum of all the multiples of 3 or 5 :" +sum );
             }
-            let calculateSum=()=>{
+            let calculateSum = () => {
                let a = parseInt(document.getElementById('num1').value);
-                   let b = document.getElementById('num2').value
-                   let n = document.getElementById('numN').value
+                   let b = parseInt(document.getElementById('num2').value);
+                   let n = parseInt(document.getElementById('numN').value);
 
                 let sum = 0;
-                if(let i =1; i<n; i++){
+                for(let i =1; i<n; i++){
                     if(i%a ===0 || i%b == 0){
                             sum += i;
 
@@ -41,7 +41,7 @@
     <body>
         <h1>Enter baggage weight</h1>
         <input type="text" id="in">
-        <button onclick='c()'>Press Me</button>
+        <button onclick='checkBaggageWeight()'>Press Me</button>
          <p>Exercise 1:</p>
         <p>Create a function and button which allows a user to enter baggage weight and alerts them if 
         the baggage exceeds the allowance of 15kg</p>
